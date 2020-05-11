@@ -212,7 +212,7 @@ fun reasonable_date (date5: int * int * int) =
             year mod 400 = 0 andalso year mod 4 = 0 andalso year mod 100 <> 0
         
         val normal_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-        val leap_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+        val leap_months = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
         fun get_nth (days: int list, number: int) = 
             if number = 1
